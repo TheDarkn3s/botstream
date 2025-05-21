@@ -14,7 +14,7 @@ def actualizar_stream():
     while True:
         try:
             result = subprocess.run(
-                ["streamlink", "--twitch-disable-ads", "--stream-url", "https://www.twitch.tv/il_daniil", "best"],
+                ["streamlink", "--twitch-disable-ads", "--stream-url", "https://www.twitch.tv/24fire24h", "best"],
                 capture_output=True, text=True
             )
             nueva_url = result.stdout.strip()
